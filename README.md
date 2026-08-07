@@ -3,9 +3,9 @@
 A synthesizable, parameterized Fixed-Point Multiply-Accumulate (MAC) architecture designed in VHDL, targeting FPGA-accelerated mathematical operations and DSP pipelines.
 
 ## 🛠️ Architecture & Features
-* **Operation:** Computes Y = sum(A * B) + Y_prev on every clock cycle with synchronous control logic.
+* **Operation:** Computes output = sum(n1 * n2) + accum on every clock cycle with synchronous control logic.
 * **Fixed-Point Precision:** Implements parameterized bit-width configurations (`generic` map) for flexible datapath width and numerical precision control.
-* **Synchronous Datapath:** Includes active-high reset (`rst`), clock enable (`en`), and accumulator register handling to prevent wraparound errors during repeated additions.
+* **Synchronous Datapath:** Includes active-high reset (`reset`), clock (`clk`), and accumulator register handling to prevent wraparound errors during repeated additions.
 * **Coding Standard:** Written using pure IEEE `numeric_std` packages for standard synthesizable RTL design.
 
 ## 📁 Repository Structure
