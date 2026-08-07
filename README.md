@@ -15,3 +15,15 @@ A synthesizable, parameterized Fixed-Point Multiply-Accumulate (MAC) architectur
 ├── docs/     # Simulation waveforms and documentation
 └── README.md
 ```
+
+## 🛠️ Tools Used
+* **Language:** VHDL (`ieee.std_logic_1164`, `ieee.numeric_std`)
+* **Simulation & Verification:** QuestaSim / ModelSim
+
+## 📊 Functional Verification
+
+The datapath was functionally verified using custom VHDL testbenches in **QuestaSim**.
+
+Below is the simulation waveform illustrating consecutive multiplication and accumulation cycles, verifying proper accumulator reset, clock timing, and numerical stability:
+
+![MAC Simulation Waveform](./docs/mac_unit_tb_wf.png)
