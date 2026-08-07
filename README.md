@@ -9,7 +9,9 @@ A synthesizable, parameterized Fixed-Point Multiply-Accumulate (MAC) architectur
 * **Coding Standard:** Written using pure IEEE `numeric_std` packages for standard synthesizable RTL design.
 
 ## 📁 Repository Structure
+```text
 ├── rtl/      # Core VHDL source files (MAC datapath)
 ├── tb/       # Testbench files and test vector stimuli
 ├── docs/     # Simulation waveforms and documentation
 └── README.md
+```
